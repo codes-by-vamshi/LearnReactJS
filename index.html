@@ -10,6 +10,13 @@
 <body>
     <div id="root">
         <h1>Hello World! - from HTML</h1>
+        <script>
+            const heading = document.createElement("h1");
+            heading.innerHTML = "Hello World! - from JS";
+
+            const root = document.getElementById("root");
+            root.appendChild(heading);
+        </script>
     </div>
 </body>
 
