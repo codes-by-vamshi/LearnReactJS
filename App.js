@@ -5,11 +5,16 @@ const parent = React.createElement(
     React.createElement(
         "div",
         { id: "child" },
-        React.createElement(
+        [React.createElement(
             "h1",
             {},
             "I'm an H1 Tag Element"
-        )
+        ),
+        React.createElement(
+            "h2",
+            {},
+            "I'm an H2 Tag Element"
+        )]
     )
 )
 const root = ReactDOM.createRoot(document.getElementById("root"));
