@@ -1,23 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement(
-        "div",
-        { id: "child" },
-        [React.createElement(
-            "h1",
-            {},
-            "I'm an H1 Tag Element"
-        ),
-        React.createElement(
-            "h2",
-            {},
-            "I'm an H2 Tag Element"
-        )]
-    )
-)
+// Creating parent using JSX
+const parent =
+        <div id="parent">
+        <div id="child">
+            <h1>I'm an H1 Tag Element - Using JSX</h1>
+            <h2>I'm an H2 Tag Element - Using JSX</h2>
+        </div>
+    </div>;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
