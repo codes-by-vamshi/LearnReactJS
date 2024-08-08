@@ -2,7 +2,6 @@
   "name": "learnreactjs",
   "version": "1.0.0",
   "description": "This is t Learning ReactJS",
-  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
